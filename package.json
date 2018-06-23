@@ -32,5 +32,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/kwanman/tkwan.xyz"
+  },
+  "standard": {
+    "globals": [
+      "graphql"
+    ]
   }
 }

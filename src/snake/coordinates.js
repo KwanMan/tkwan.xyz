@@ -16,20 +16,20 @@ export default function co (x, y) {
 }
 
 const translations = {
-  d ({ x, y }) {
-    return { x, y: y + 1 }
+  d ({ x, y }, steps = 1) {
+    return { x, y: y + steps }
   },
 
-  u ({ x, y }) {
-    return { x, y: y - 1 }
+  u ({ x, y }, steps = 1) {
+    return { x, y: y - steps }
   },
 
-  l ({ x, y }) {
-    return { x: x - 1, y }
+  l ({ x, y }, steps = 1) {
+    return { x: x - steps, y }
   },
 
-  r ({ x, y }) {
-    return { x: x + 1, y }
+  r ({ x, y }, steps = 1) {
+    return { x: x + steps, y }
   }
 }
 

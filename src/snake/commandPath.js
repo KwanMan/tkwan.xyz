@@ -1,21 +1,11 @@
 import _ from 'lodash'
-import co from './coordinates.js'
+import { translate } from './coordinates.js'
 import * as directions from './directions.js'
 export function resolveCoordinates (start, ...commands) {
   const coords = [start]
   commands.forEach(command => {
-    const { x: prevX, y: prevY } = coords[0]
     const { direction, steps } = parseCommand(command)
-    switch (direction) {
-      case 'u':
-        return coords.unshift(co(prevX, prevY - steps))
-      case 'd':
-        return coords.unshift(co(prevX, prevY + steps))
-      case 'l':
-        return coords.unshift(co(prevX - steps, prevY))
-      case 'r':
-        return coords.unshift(co(prevX + steps, prevY))
-    }
+    coords.unshift(translate[direction](coords[0], steps))
   })
   return coords.reverse()
 }
