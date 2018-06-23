@@ -8,7 +8,9 @@ There's not much to do around here yet.
 
 You can go and read a few [blog posts](/blog/minimalism)
 
-Or you can play some [tetris](https://kwanman.github.io/tetris/)
+or play some [snake](/snake)
+
+maybe even [tetris](https://kwanman.github.io/tetris/)
 
 > Love people. Use things. The opposite never works.
 `

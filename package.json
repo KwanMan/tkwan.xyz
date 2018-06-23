@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "tkwan.xyz",
+  "description": "tkwan.xyz",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Tommy Kwan <tkwan196@gmail.com>",
   "dependencies": {
     "date-fns": "^1.29.0",
     "gatsby": "^1.9.247",
@@ -11,9 +11,10 @@
     "gatsby-plugin-typography": "^1.7.19",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
-    "prettier-standard": "^8.0.1",
+    "lodash": "^4.17.10",
     "react-helmet": "^5.2.0",
     "react-markdown": "^3.3.3",
+    "roughjs": "^2.2.1",
     "typography-theme-moraga": "^0.15.10"
   },
   "license": "MIT",
@@ -21,9 +22,12 @@
     "build": "gatsby build",
     "develop": "gatsby develop"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier-standard": "^8.0.1",
+    "standard": "^11.0.1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/kwanman/tkwan.xyz"
   }
 }
