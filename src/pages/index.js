@@ -6,7 +6,7 @@ Hey, you.
 
 There's not much to do around here yet.
 
-You can go and read a few [blog posts](/blog/minimalism)
+You can go and read a few [blog posts](/blog/because-the-world-needs-another-blog)
 
 or play some [snake](/snake)
 
