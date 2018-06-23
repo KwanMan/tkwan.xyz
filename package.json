@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Tommy Kwan <tkwan196@gmail.com>",
   "dependencies": {
+    "babel-plugin-transform-regenerator": "^6.26.0",
     "date-fns": "^1.29.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",

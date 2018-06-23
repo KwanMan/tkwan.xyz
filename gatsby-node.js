@@ -2,6 +2,11 @@ const path = require('path')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const generateBabelConfig = require('gatsby/dist/utils/babel-config')
 
+exports.modifyBabelrc = ({ babelrc }) => ({
+  ...babelrc,
+  plugins: babelrc.plugins.concat(['transform-regenerator'])
+})
+
 exports.modifyWebpackConfig = ({ config, stage }) => {
   const program = {
     directory: __dirname,
