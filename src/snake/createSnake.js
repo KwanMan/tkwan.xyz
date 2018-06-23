@@ -40,8 +40,15 @@ export default function createSnake (config) {
     if (opposite(direction) === lastDirection) {
       return getState()
     }
-    const newCoordinates = translate[direction](headCoordinates)
-    if (occupied.check(newCoordinates)) {
+    const nextPosition = translate[direction](headCoordinates)
+    const { x, y } = nextPosition
+    if (
+      occupied.check(nextPosition) ||
+      x < 0 ||
+      y < 0 ||
+      x >= WIDTH_BLOCKS ||
+      y >= HEIGHT_BLOCKS
+    ) {
       dead = true
       return getState()
     }
@@ -65,10 +72,10 @@ export default function createSnake (config) {
       rotateStart(frontWall, isClockwise)
     }
     lastDirection = direction
-    headCoordinates = newCoordinates
-    occupied.set(newCoordinates, true)
+    headCoordinates = nextPosition
+    occupied.set(nextPosition, true)
 
-    const foundFood = areEqual(food, newCoordinates)
+    const foundFood = areEqual(food, nextPosition)
 
     if (!(extend || foundFood)) {
       const { walls, coordinates } = history.shift()
