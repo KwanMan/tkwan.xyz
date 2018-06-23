@@ -4,7 +4,10 @@ const generateBabelConfig = require('gatsby/dist/utils/babel-config')
 
 exports.modifyBabelrc = ({ babelrc }) => ({
   ...babelrc,
-  plugins: babelrc.plugins.concat(['transform-regenerator'])
+  plugins: babelrc.plugins.concat([
+    'transform-regenerator',
+    'transform-runtime'
+  ])
 })
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
