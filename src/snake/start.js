@@ -60,6 +60,7 @@ export default function start (mountNode) {
     if (direction && opposite(currentDirection) !== direction) {
       e.preventDefault()
       currentDirection = direction
+      // nextTick()
     }
   }
 
