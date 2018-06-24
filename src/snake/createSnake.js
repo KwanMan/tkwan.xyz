@@ -1,16 +1,13 @@
-import { resolveCoordinates, parseCommand } from './commandPath.js'
 import { opposite, clockwise } from './directions.js'
 import co, { translate, areEqual } from './coordinates.js'
 import createCoordinateMap from './coordinateMap.js'
 import { WIDTH_BLOCKS, HEIGHT_BLOCKS } from './constants.js'
 import createWall from './wall.js'
 
-export default function createSnake (config) {
+export default function createSnake () {
   let dead = false
-  let anchor = { x: 2, y: 1 }
-  const leftWall = createWall('d1')
-  const frontWall = createWall('l1')
-  const rightWall = createWall('d1')
+  const leftWall = createWall(co(2, 1), 'd')
+  const rightWall = createWall(co(1, 1), 'd')
   const history = []
   let headCoordinates = co(1, 1)
 
@@ -28,21 +25,14 @@ export default function createSnake (config) {
       return getState()
     }
     const nextPosition = translate[direction](headCoordinates)
-    const { x, y } = nextPosition
-    if (
-      occupied.check(nextPosition) ||
-      x < 0 ||
-      y < 0 ||
-      x >= WIDTH_BLOCKS ||
-      y >= HEIGHT_BLOCKS
-    ) {
+    if (occupied.check(nextPosition)) {
       dead = true
       return getState()
     }
     if (direction === lastDirection) {
-      leftWall.extendFront()
-      rightWall.extendFront()
-      history.push({ walls: 'lr', coordinates: headCoordinates })
+      leftWall.addFront(direction)
+      rightWall.addFront(direction)
+      history.push({ walls: ['l', 'r'], coordinates: headCoordinates })
     } else {
       const isClockwise = clockwise(lastDirection) === direction
       const inner = isClockwise ? rightWall : leftWall
@@ -51,9 +41,8 @@ export default function createSnake (config) {
       inner.rotateFront(isClockwise)
       outer.addFront(direction)
       outer.addFront(direction)
-      frontWall.rotateFront(isClockwise)
       history.push({
-        walls: isClockwise ? 'll' : 'rr',
+        walls: isClockwise ? ['l', 'l'] : ['r', 'r'],
         coordinates: headCoordinates
       })
     }
@@ -65,10 +54,8 @@ export default function createSnake (config) {
 
     if (!(extend || foundFood)) {
       const { walls, coordinates } = history.shift()
-      walls.split('').forEach(wall => {
+      walls.forEach(wall => {
         if (wall === 'l') {
-          const { direction } = parseCommand(leftWall.get()[0])
-          anchor = resolveCoordinates(anchor, `${direction}1`)[1]
           leftWall.removeBack()
         } else {
           rightWall.removeBack()
@@ -85,10 +72,12 @@ export default function createSnake (config) {
 
   function getState () {
     return {
-      anchor,
-      path: [...leftWall.get(), ...frontWall.get(), ...rightWall.getReverse()],
       occupied,
-      dead
+      dead,
+      coordinates: [
+        ...leftWall.getCoordinates(),
+        ...rightWall.getCoordinatesReverse()
+      ]
     }
   }
 

@@ -1,5 +1,6 @@
 import rough from 'roughjs'
 import { BLOCK, WIDTH, HEIGHT } from './constants.js'
+
 export default function createLayer (mount, style) {
   const el = document.createElement('canvas')
   el.style.position = 'absolute'
@@ -13,6 +14,7 @@ export default function createLayer (mount, style) {
 
   function draw (coordinates) {
     el.getContext('2d').clearRect(0, 0, WIDTH, HEIGHT)
+    coordinates = coordinates.map(({ x, y }) => [x * BLOCK, y * BLOCK])
     rough.canvas(el).polygon(coordinates, style)
   }
 }

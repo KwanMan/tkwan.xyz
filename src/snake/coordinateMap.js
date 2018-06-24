@@ -7,7 +7,13 @@ export default function createCoordinateMap (width, height, initial) {
       occupied[stringify({ x, y })] = val
     },
     check ({ x, y }) {
-      return !!occupied[stringify({ x, y })]
+      return (
+        !!occupied[stringify({ x, y })] ||
+        x >= width ||
+        y >= height ||
+        x < 0 ||
+        y < 0
+      )
     },
     getFree () {
       let coordinates
