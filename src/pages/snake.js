@@ -4,17 +4,20 @@ import snake from '../snake/start'
 export default class Snake extends React.Component {
   render () {
     return (
-      <div
-        style={{
-          position: 'absolute',
-          border: '1px solid black',
-          width: 500,
-          height: 700
-        }}
-        ref={el => {
-          this.el = el
-        }}
-      />
+      <div>
+        <div>Press space to play/pause</div>
+        <div
+          style={{
+            position: 'absolute',
+            border: '1px solid black',
+            width: 440,
+            height: 640
+          }}
+          ref={el => {
+            this.el = el
+          }}
+        />
+      </div>
     )
   }
   componentDidMount () {

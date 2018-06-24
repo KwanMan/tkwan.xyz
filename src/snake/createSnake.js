@@ -1,18 +1,18 @@
+import _ from 'lodash'
 import { opposite, clockwise } from './directions.js'
 import co, { translate, areEqual } from './coordinates.js'
 import createCoordinateMap from './coordinateMap.js'
-import { WIDTH_BLOCKS, HEIGHT_BLOCKS } from './constants.js'
+import { WIDTH_IN_BLOCKS, HEIGHT_IN_BLOCKS } from './constants.js'
 import createWall from './wall.js'
 
 export default function createSnake () {
   let dead = false
   const leftWall = createWall(co(2, 1), 'd')
   const rightWall = createWall(co(1, 1), 'd')
-  const history = []
-  let headCoordinates = co(1, 1)
+  const history = [{ coordinates: co(1, 1) }]
 
   let lastDirection = 'd'
-  const occupied = createCoordinateMap(WIDTH_BLOCKS, HEIGHT_BLOCKS)
+  const occupied = createCoordinateMap(WIDTH_IN_BLOCKS, HEIGHT_IN_BLOCKS)
   occupied.set(co(1, 1), true)
 
   move('down', { extend: true })
@@ -24,34 +24,19 @@ export default function createSnake () {
     if (dead || opposite(direction) === lastDirection) {
       return getState()
     }
-    const nextPosition = translate[direction](headCoordinates)
-    if (occupied.check(nextPosition)) {
+    const nextCoordinates = translate[direction](_.last(history).coordinates)
+    if (occupied.check(nextCoordinates)) {
       dead = true
-      return getState()
+      return {
+        died: true,
+        ...getState()
+      }
     }
-    if (direction === lastDirection) {
-      leftWall.addFront(direction)
-      rightWall.addFront(direction)
-      history.push({ walls: ['l', 'r'], coordinates: headCoordinates })
-    } else {
-      const isClockwise = clockwise(lastDirection) === direction
-      const inner = isClockwise ? rightWall : leftWall
-      const outer = isClockwise ? leftWall : rightWall
 
-      inner.rotateFront(isClockwise)
-      outer.addFront(direction)
-      outer.addFront(direction)
-      history.push({
-        walls: isClockwise ? ['l', 'l'] : ['r', 'r'],
-        coordinates: headCoordinates
-      })
-    }
-    lastDirection = direction
-    headCoordinates = nextPosition
-    occupied.set(nextPosition, true)
-
-    const foundFood = areEqual(food, nextPosition)
-
+    const foundFood = areEqual(food, nextCoordinates)
+    // we need to remove the tail before adding to the head,
+    // if not we could crash into the tail even though it
+    // should be removed at the same time
     if (!(extend || foundFood)) {
       const { walls, coordinates } = history.shift()
       walls.forEach(wall => {
@@ -64,6 +49,24 @@ export default function createSnake () {
       occupied.set(coordinates, false)
     }
 
+    if (direction === lastDirection) {
+      leftWall.addFront(direction)
+      rightWall.addFront(direction)
+      history[history.length - 1].walls = ['l', 'r']
+    } else {
+      const isClockwise = clockwise(lastDirection) === direction
+      const inner = isClockwise ? rightWall : leftWall
+      const outer = isClockwise ? leftWall : rightWall
+
+      inner.rotateFront(isClockwise)
+      outer.addFront(direction)
+      outer.addFront(direction)
+      history[history.length - 1].walls = isClockwise ? ['l', 'l'] : ['r', 'r']
+    }
+    history.push({ coordinates: nextCoordinates })
+    lastDirection = direction
+    occupied.set(nextCoordinates, true)
+
     return {
       ateFood: foundFood,
       ...getState()
@@ -73,7 +76,6 @@ export default function createSnake () {
   function getState () {
     return {
       occupied,
-      dead,
       coordinates: [
         ...leftWall.getCoordinates(),
         ...rightWall.getCoordinatesReverse()

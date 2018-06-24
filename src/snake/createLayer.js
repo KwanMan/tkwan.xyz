@@ -12,9 +12,9 @@ export default function createLayer (mount, style) {
 
   return { el, draw }
 
-  function draw (coordinates) {
+  function draw (coordinates, overrideStyle) {
     el.getContext('2d').clearRect(0, 0, WIDTH, HEIGHT)
     coordinates = coordinates.map(({ x, y }) => [x * BLOCK, y * BLOCK])
-    rough.canvas(el).polygon(coordinates, style)
+    rough.canvas(el).polygon(coordinates, { ...style, ...overrideStyle })
   }
 }

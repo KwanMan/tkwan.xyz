@@ -4,3 +4,5 @@ export default {
   39: 'right', // Right arrow
   40: 'down' // Down arrow
 }
+
+export const SPACE_KEY = 32
