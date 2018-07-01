@@ -8,8 +8,16 @@ import Header from '../components/header'
 
 const Layout = ({ children, data }) => (
   <div>
-    <Helmet title={data.site.siteMetadata.title} />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Helmet>
+      <title>{data.site.siteMetadata.title}</title>
+      <link
+        rel='icon'
+        type='image/png'
+        sizes='32x32'
+        href='/favicon-no-straw-32x32.png'
+      />
+    </Helmet>
+    <Header siteTitle={`Hello, I'm Tommy`} />
     <div
       style={{
         margin: '0 auto',
