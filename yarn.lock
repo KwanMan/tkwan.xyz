@@ -5417,11 +5417,12 @@ pako@~1.0.5:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.6.tgz#0101211baa70c4bca4a0f63f2206e97b7dfaf258"
 
-paper-snake@^1.0.0:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/paper-snake/-/paper-snake-1.0.5.tgz#2f5df6c4ecee76b4590d9a6afe2e4d3da35e60c5"
+paper-snake@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/paper-snake/-/paper-snake-1.0.8.tgz#5b4d5e6ce9cd2bcdfa92d302b1bad75436b942e8"
   dependencies:
     lodash-es "^4.17.10"
+    regenerator-runtime "^0.12.0"
     roughjs "^2.2.3"
 
 param-case@2.1.x:
@@ -6472,6 +6473,10 @@ regenerator-runtime@^0.10.5:
 regenerator-runtime@^0.11.0, regenerator-runtime@^0.11.1:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
+
+regenerator-runtime@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.0.tgz#8052ac952d85b10f3425192cd0c53f45cf65c6cb"
 
 regenerator-transform@^0.10.0:
   version "0.10.1"
