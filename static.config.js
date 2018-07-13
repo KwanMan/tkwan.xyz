@@ -6,7 +6,6 @@ import Document from './src/components/Document.js'
 const blogDir = path.resolve(__dirname, './src/pages/blog')
 
 export default {
-  siteRoot: 'https://tkwan.xyz',
   getSiteData: () => ({
     siteTitle: 'tkwan.xyz'
   }),
