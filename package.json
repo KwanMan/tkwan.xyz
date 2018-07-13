@@ -5,6 +5,7 @@
   "author": "Tommy Kwan <tkwan196@gmail.com>",
   "dependencies": {
     "date-fns": "^1.29.0",
+    "paper-snake": "^1.0.0",
     "react-markdown": "^3.3.4",
     "react-static": "^5.9.7",
     "react-static-routes": "^1.0.0",
@@ -19,10 +20,11 @@
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
-    "serve": "serve dist -p 3000"
+    "serve": "serve dist -p 4000"
   },
   "devDependencies": {
     "prettier-standard": "^8.0.1",
+    "serve": "^9.2.0",
     "standard": "^11.0.1"
   },
   "repository": {

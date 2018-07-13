@@ -1,5 +1,5 @@
 import React from 'react'
-import snake from '../snake/start'
+import snake from 'paper-snake'
 
 export default class Snake extends React.Component {
   render () {
