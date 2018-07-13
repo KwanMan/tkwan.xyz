@@ -21,4 +21,4 @@ or maybe [tetris](https://kwanman.github.io/tetris/) is more your taste?
 [_The Minimalists_](https://www.theminimalists.com/people-things/)
 `
 
-export default () => <ReactMarkdown source={md} />
+export default () => <div><ReactMarkdown source={md} /></div>

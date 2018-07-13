@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 
-import './reading-list.css'
+import './ReadingList.css'
 
 const md = `
 # Some books I've been reading
