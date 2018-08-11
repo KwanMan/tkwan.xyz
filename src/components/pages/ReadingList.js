@@ -30,6 +30,7 @@ I've always wanted to write about books I've read. Not reviews, but how it chang
 - Choose Wonder Over Worry, by Amber Rae
 
 ### 2018
+- Be Everything at Once, by Dami Lee
 - In Order to Live: A North Korean Girl's Journey to Freedom, by Park Yeonmi
 - So Much I Want to Tell You, by Anna Akana
 
