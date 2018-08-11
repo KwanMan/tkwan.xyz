@@ -1,10 +1,10 @@
 import React from 'react'
-import ReactMarkdown from 'react-markdown'
+import Markdown from '../molecules/Markdown'
 
 import './ReadingList.css'
 
 const md = `
-# Some books I've been reading
+# 📖 Some books I've been reading
 
 I've always wanted to write about books I've read. Not reviews, but how it changed how I thought, how I looked at the world. I have a lot of random notes dotted around, snippets of paragraphs I've attempted, mostly incomprehensible to anyone by myself, but I've decided to post them all here, as I come across them. I've begun trying to list everything I remember reading (read: found in my Amazon order history) in the past few years.
 
@@ -54,4 +54,4 @@ I've always wanted to write about books I've read. Not reviews, but how it chang
 - Steve Jobs, by Walter Isaacson
 `
 
-export default () => <ReactMarkdown source={md} />
+export default () => <Markdown source={md} />

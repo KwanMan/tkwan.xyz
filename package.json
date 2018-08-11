@@ -4,17 +4,15 @@
   "version": "1.0.0",
   "author": "Tommy Kwan <tkwan196@gmail.com>",
   "dependencies": {
+    "classnames": "^2.2.6",
     "date-fns": "^1.29.0",
     "paper-snake": "^1.0.11",
     "react-helmet": "^5.2.0",
     "react-markdown": "^3.3.4",
     "react-static": "^5.9.7",
     "react-static-routes": "^1.0.0",
-    "react-typography": "^0.16.13",
     "regenerator-runtime": "^0.12.0",
     "roughjs": "^2.2.3",
-    "typography": "^0.16.17",
-    "typography-theme-moraga": "^0.15.10",
     "yaml-front-matter": "^4.0.0"
   },
   "license": "MIT",
