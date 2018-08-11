@@ -3,8 +3,8 @@ import { Router } from 'react-static'
 import { hot } from 'react-hot-loader'
 import Routes from 'react-static-routes'
 
-import Header from './components/organisms/Header'
-import Footer from './components/organisms/Footer'
+import Header from './organisms/Header'
+import Footer from './organisms/Footer'
 
 import './App.css'
 
