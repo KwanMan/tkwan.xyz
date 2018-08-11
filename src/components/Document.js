@@ -3,7 +3,7 @@ import React from 'react'
 export default ({ Html, Head, Body, children }) => (
   <Html>
     <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>tommy kwan</title>
       <link
         rel='icon'
