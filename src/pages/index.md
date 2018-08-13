@@ -12,3 +12,5 @@
 
 👉 he tries to [blog](/blog) sometimes
 
+👉 and of course, he loves [kpop](https://youtu.be/Nu2yQ1zYDYU)
+
