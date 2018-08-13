@@ -4,10 +4,9 @@ import Link from '../atoms/Link'
 import './Header.css'
 
 const navItems = {
-  lists: '/reading-list',
+  books: '/reading-list',
   blog: '/blog',
-  snake: '/snake',
-  tetris: 'https://kwanman.github.io/tetris/'
+  snake: '/snake'
 }
 
 export default function Header () {
