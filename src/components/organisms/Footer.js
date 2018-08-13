@@ -6,7 +6,7 @@ import './Footer.css'
 export default function Footer ({ className }) {
   return (
     <div className={classnames('Footer', className)}>
-      hand crafted in 🇬🇧 with caffeine
+      © tommy kwan 2018, hand crafted with caffeine in london 🇬🇧
     </div>
   )
 }
