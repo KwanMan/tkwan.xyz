@@ -1,7 +1,5 @@
 👆 this guy's a product engineer
 
-_here's a few facts about him:_
-
 👉 his friends describe him with words like coffee aficionado, traveller, [instagram “photographer”](https://www.instagram.com/itskwanyall), coffee addict, reader, thinker, minimalist, coffee hipster...
 
 ...he likes his coffee
@@ -9,6 +7,8 @@ _here's a few facts about him:_
 👉 he prefers the term professional fun-haver
 
 👉 he writes [code](https://www.github.com/kwanman) for a living
+
+👉 he's decided he has an aversion to capital letters today
 
 👉 he got bored and tried to revive [snake](/snake)
 
@@ -18,3 +18,15 @@ _here's a few facts about him:_
 
 👉 and of course, he loves [kpop](https://www.youtube.com/watch?v=9mQk7Evt6Vs)
 
+#### sounds interesting, where can i find more about him?
+
+[instagram](https://www.instagram.com/itskwanyall)
+[github](https://www.github.com/kwanman)
+
+#### now I know who tommy is, what should i do next?
+
+listen: [the ground up show](https://www.youtube.com/watch?v=hHzNhPdEA1I), matt d'avella
+
+read: [leaders eat last](https://www.goodreads.com/book/show/16144853-leaders-eat-last), simon sinek
+
+watch: [the power of introverts](https://www.youtube.com/watch?v=c0KYU2j0TM4), susan cain
