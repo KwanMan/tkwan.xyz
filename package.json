@@ -6,6 +6,8 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "date-fns": "^1.29.0",
+    "escape-string-regexp": "^1.0.5",
+    "klaw-sync": "^4.0.0",
     "paper-snake": "^1.0.11",
     "react-helmet": "^5.2.0",
     "react-markdown": "^3.3.4",

@@ -21,7 +21,6 @@ export default class Snake extends React.Component {
     )
   }
   componentDidMount () {
-    console.log(snake)
     snake(this.el)
   }
 }
