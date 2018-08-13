@@ -2,7 +2,7 @@
 
 👉 he still thinks talking about himself in the third person is cool in 2018
 
-👉 his friends describe him with words like coffee aficionado, traveller, coffee addict, [instagram “photogragher”](https://www.instagram.com/itskwanyall), reader, thinker, minimalist, coffee hipster
+👉 his friends describe him with words like coffee aficionado, traveller, coffee addict, [instagram “photographer”](https://www.instagram.com/itskwanyall), reader, thinker, minimalist, coffee hipster
 
 👉 he prefers the term professional fun-haver
 
