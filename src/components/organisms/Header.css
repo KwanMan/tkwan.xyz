@@ -1,7 +1,7 @@
 .Header {
   display: flex;
   justify-content: space-between;
-  padding: 32px 0;
+  padding: 32px 0 16px 0;
 }
 
 @media (max-width: 319px) {

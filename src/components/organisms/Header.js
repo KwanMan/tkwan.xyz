@@ -5,8 +5,9 @@ import './Header.css'
 
 const navItems = {
   lists: '/reading-list',
-  blog: '/blog/because-the-world-needs-another-blog',
-  snake: '/snake'
+  blog: '/blog',
+  snake: '/snake',
+  tetris: 'https://kwanman.github.io/tetris/'
 }
 
 export default function Header () {

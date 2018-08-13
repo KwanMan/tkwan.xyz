@@ -1,15 +1,14 @@
-I’m a product engineer, passionate about solving complex problems with simple solutions.
+👆 this guy's a product engineer
 
-There's not much around here yet.
+👉 he likes finding simple solutions for complex problems
 
-In the meantime, you can go and read a (placeholder) [blog post](/blog/because-the-world-needs-another-blog)
+👉 he still thinks talking about himself in the third person is cool
 
-check out what I've been [reading](/reading-list)
+👉 his friends describe him with words like coffee aficionado, traveller, coffee addict, instagram “photogragher”, reader, thinker, minimalist, coffee hipster
 
-play some [snake](/snake)
+👉 he prefers the term professional fun-haver
 
-or maybe [tetris](https://kwanman.github.io/tetris/) is more your taste?
+👉 he got bored and tried to revive [snake](/snake)
 
-> Love people, use things. The opposite never works.
+👉 he tries to [blog](/blog) sometimes
 
-[_The Minimalists_](https://www.theminimalists.com/people-things/)

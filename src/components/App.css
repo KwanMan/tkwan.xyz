@@ -12,7 +12,7 @@ html, body, #root {
 }
 
 body {
-  font: 14px / 1.7 Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,monospace;
+  font: 16px/24px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 .App {

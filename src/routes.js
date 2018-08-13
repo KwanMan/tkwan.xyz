@@ -14,11 +14,12 @@ export default async function getRoutes () {
     const ext = path.extname(file.path)
     const publicPath = getPublicPath(file.path)
     if (ext === '.md') {
-      const { content, meta } = readYfm(file.path)
+      const { meta } = readYfm(file.path)
       routes.push({
         path: publicPath,
         component: path.resolve(templatesDir, meta.template || 'MarkdownPage'),
-        getData: () => ({ content, meta })
+        // always refetch data so we don't have to restart dev server
+        getData: () => readYfm(file.path)
       })
     }
     if (ext === '.js') {
@@ -36,7 +37,10 @@ function getPublicPath (fullPath) {
   let publicPath = fullPath
     .replace(new RegExp('^' + escape(pagesDir)), '')
     .replace(new RegExp(escape(ext) + '$'), '')
-  return publicPath === '/index' ? '/' : publicPath
+  if (publicPath.endsWith('/index')) {
+    publicPath = publicPath.replace(/index$/, '')
+  }
+  return publicPath
 }
 
 function readYfm (location) {
