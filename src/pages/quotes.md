@@ -6,4 +6,4 @@ _ - [Oliver Woodings](https://twitter.com/oliverwoodings), Tommy's Boss - _
 
 > “Tommy once lost his dagger in a river, but he didn’t let that distract him from his mission”
 
-_ - Alain Lemaire - _
+_ - Alain Lemaire, Tommy's Warlock - _
