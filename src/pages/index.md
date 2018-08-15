@@ -23,7 +23,7 @@
 [instagram](https://www.instagram.com/itskwanyall)
 [github](https://www.github.com/kwanman)
 
-#### now I know who tommy is, what should i do next?
+#### now i know who tommy is, what should i do next?
 
 listen: [the ground up show](https://www.youtube.com/watch?v=hHzNhPdEA1I), matt d'avella
 
