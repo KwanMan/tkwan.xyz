@@ -16,7 +16,7 @@
 
 👉 he tries to [blog](/blog) sometimes
 
-👉 and of course, he loves [kpop](https://www.youtube.com/watch?v=9mQk7Evt6Vs)
+👉 and of course, he loves [kpop](https://www.youtube.com/watch?v=9pdj4iJD08s)
 
 #### sounds interesting, where can i find more about him?
 
