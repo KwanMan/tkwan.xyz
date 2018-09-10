@@ -5,7 +5,6 @@ import './Header.css'
 
 const navItems = {
   books: '/reading-list',
-  blog: '/blog',
   snake: '/snake'
 }
 

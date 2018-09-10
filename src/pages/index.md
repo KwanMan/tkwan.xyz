@@ -14,16 +14,11 @@
 
 👉 he thinks talking about himself in the third person is still cool in 2018
 
-👉 he tries to [blog](/blog) sometimes
-
 👉 and of course, he loves [kpop](https://www.youtube.com/watch?v=9pdj4iJD08s)
 
-#### sounds interesting, where can i find more about him?
+#### what should i do next?
 
-[instagram](https://www.instagram.com/itskwanyall)
-[github](https://www.github.com/kwanman)
-
-#### now i know who tommy is, what should i do next?
+follow: [itskwanyall](https://www.instagram.com/itskwanyall) @ instagram
 
 listen: [the ground up show](https://www.youtube.com/watch?v=hHzNhPdEA1I), matt d'avella
 
