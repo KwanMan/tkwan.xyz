@@ -1,16 +1,18 @@
 👆 this guy's a product engineer
 
+👉 he writes [code](https://www.github.com/kwanman) for a living
+
 👉 his friends describe him with words like coffee aficionado, traveller, [instagram “photographer”](https://www.instagram.com/itskwanyall), coffee addict, reader, thinker, minimalist, coffee hipster...
 
 ...he likes his coffee
 
 👉 he prefers the term professional fun-haver
 
-👉 he writes [code](https://www.github.com/kwanman) for a living
+👉 he came 2nd in MLF 2018
 
 👉 he's decided he has an aversion to capital letters today
 
-👉 he got bored and tried to revive [snake](/snake)
+👉 he got bored and revived [snake](/snake)
 
 👉 he thinks talking about himself in the third person is still cool in 2018
 
